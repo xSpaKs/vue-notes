@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
+        <title>Note App</title>
         <script type="module" src="/src/main.js" defer></script>
         <link
             rel="stylesheet"
@@ -12,45 +12,6 @@
         />
     </head>
     <body>
-        <div id="app">
-            <form @submit.prevent="addNote">
-                <div>
-                    <label for="name">Name of the note</label>
-                    <input type="text" name="name" v-model="newNoteTitle" />
-                </div>
-                <div>
-                    <label for="content">Content of the note</label>
-                    <input
-                        type="text"
-                        name="content"
-                        v-model="newNoteContent"
-                    />
-                </div>
-                <input type="submit" value="Create new note" />
-            </form>
-
-            <div>
-                <h3>List of the notes</h3>
-
-                <note
-                    v-for="note in notes"
-                    :id="note.id"
-                    :title="note.title"
-                    :content="note.content"
-                    :created="note.created"
-                    :updated="note.updated"
-                    @delete-note="deleteNote"
-                    @update-note="updateNote"
-                />
-
-                <router-link
-                    v-for="note in notes"
-                    :key="note.id"
-                    :to="`/note/${note.id}`"
-                >
-                    {{ note.title }}
-                </router-link>
-            </div>
-        </div>
+        <div id="app"></div>
     </body>
 </html>
