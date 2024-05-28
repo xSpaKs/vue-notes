@@ -1,9 +1,10 @@
 <template>
     <div class="note">
-        <p>{{ id }}</p>
-        <p>Word count : {{ wordCount }}</p>
         <input type="text" v-model="currentTitle" />
-        <input type="text" v-model="currentContent" />
+        <div style="display: flex; gap: 15px">
+            <textarea type="text" v-model="currentContent" />
+            <p style="white-space: nowrap">Word count : {{ wordCount }}</p>
+        </div>
         <p>Created on : {{ created_at }}</p>
         <p>Last updated on : {{ updated_at }}</p>
         <button @click="updateNote">Update note</button>
