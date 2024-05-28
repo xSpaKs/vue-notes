@@ -3,7 +3,7 @@
         <input type="text" v-model="currentTitle" />
         <div style="display: flex; gap: 15px">
             <textarea type="text" v-model="currentContent" />
-            <p style="white-space: nowrap">Word count : {{ wordCount }}</p>
+            <p style="white-space: nowrap">Word count : {{ wordCount() }}</p>
         </div>
         <p>Created on : {{ created_at }}</p>
         <p>Last updated on : {{ updated_at }}</p>
@@ -28,6 +28,10 @@ export default {
 
     mounted() {
         this.loadNote();
+    },
+
+    watch: {
+        "$route.params.id": "loadNote",
     },
 
     methods: {
@@ -56,9 +60,7 @@ export default {
                 content: this.currentContent,
             });
         },
-    },
 
-    computed: {
         wordCount() {
             return this.content.trim().split(/\s+/).length;
         },
