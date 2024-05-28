@@ -59,6 +59,8 @@ export default {
                 title: this.currentTitle,
                 content: this.currentContent,
             });
+
+            this.loadNote();
         },
 
         wordCount() {
