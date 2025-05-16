@@ -1,29 +1,62 @@
-# vue3-notes
+# 📝 Vue3 Notes - Simple Note Manager
 
-This template should help get you started developing with Vue 3 in Vite.
+Ce projet est une application web développée avec **Vue 3** permettant de créer, afficher, modifier et supprimer des notes. L’interface est sobre et en mode sombre pour un confort visuel optimal.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ⚙️ Fonctionnalités
 
-## Customize configuration
+- ✅ Création de nouvelles notes (titre + contenu)
+- 🖊 Modification des notes existantes
+- 🗑 Suppression de notes
+- 📋 Affichage d’une liste de toutes les notes
+- ⌛ Suivi de la date de création et de dernière mise à jour
+- 🔢 Compteur de mots du contenu
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+---
 
-## Project Setup
+## 📁 Structure du projet
 
-```sh
+src/
+├── components/
+│ ├── App.vue # Composant principal
+│ ├── Empty.vue # Affichage quand aucune note n'est sélectionnée
+│ ├── Note.vue # Formulaire de modification de note
+│ └── NoteManager.vue # Logique de gestion des notes
+├── router/
+│ └── index.js # Configuration du routeur (optionnel)
+├── main.js # Point d'entrée de l'application
+
+## 🖼 Aperçu de l’interface
+
+![Aperçu interface](./captures/notes-app-ui.png)
+
+- À gauche : formulaire de création de note
+- À droite : éditeur de note sélectionnée
+- En bas : liste de toutes les notes cliquables
+
+---
+
+## 🚀 Lancer le projet
+
+### 1. Clone le dépôt :
+
+git clone https://github.com/xSpaKs/vue-notes.git
+cd vue3-notes
+
+### 2. Installe les dépendances :
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
+### 3. Lance le serveur de développement :
 
-```sh
 npm run dev
-```
 
-### Compile and Minify for Production
+### 4. Ouvre http://localhost:5173 dans ton navigateur.
 
-```sh
-npm run build
-```
+## 🛠 Technologies utilisées
+
+- Vue 3 + Composition API
+- Vite (pour le bundling)
+- HTML/CSS natif (Dark Theme)
+- LocalStorage pour la persistance des données
