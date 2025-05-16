@@ -13,13 +13,9 @@ Ce projet est une application web développée avec **Vue 3** permettant de cré
 
 ## 🖼 Aperçu de l’interface
 
-![Aperçu interface](./captures/notes-app-ui.png)
-
 - À gauche : formulaire de création de note
 - À droite : éditeur de note sélectionnée
 - En bas : liste de toutes les notes cliquables
-
----
 
 ## 🚀 Lancer le projet
 
