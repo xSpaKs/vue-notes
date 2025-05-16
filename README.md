@@ -2,8 +2,6 @@
 
 Ce projet est une application web développée avec **Vue 3** permettant de créer, afficher, modifier et supprimer des notes. L’interface est sobre et en mode sombre pour un confort visuel optimal.
 
----
-
 ## ⚙️ Fonctionnalités
 
 - ✅ Création de nouvelles notes (titre + contenu)
@@ -12,20 +10,6 @@ Ce projet est une application web développée avec **Vue 3** permettant de cré
 - 📋 Affichage d’une liste de toutes les notes
 - ⌛ Suivi de la date de création et de dernière mise à jour
 - 🔢 Compteur de mots du contenu
-
----
-
-## 📁 Structure du projet
-
-src/
-├── components/
-│ ├── App.vue # Composant principal
-│ ├── Empty.vue # Affichage quand aucune note n'est sélectionnée
-│ ├── Note.vue # Formulaire de modification de note
-│ └── NoteManager.vue # Logique de gestion des notes
-├── router/
-│ └── index.js # Configuration du routeur (optionnel)
-├── main.js # Point d'entrée de l'application
 
 ## 🖼 Aperçu de l’interface
 
